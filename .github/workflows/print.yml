@@ -1,0 +1,13 @@
+name: Print message
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print a message
+        run: echo "hello! A push detected on main branch"
